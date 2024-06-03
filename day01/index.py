@@ -126,6 +126,9 @@ sorted_dict = dict(sorted(dict7, key=operator.itemgetter(1),reverse=True))
 print(sorted_dict)
 
 # 数字类型
-
-
+print("====================")
+print(1 | 2)
+print(True | False)
+a = str("asdas") | str("asdadsasda")
+print(a)
 
