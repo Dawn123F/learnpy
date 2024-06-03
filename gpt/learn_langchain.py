@@ -2,4 +2,4 @@
 
 import os
 
-print(os.environ.get("OPENAI_KEY_API"))
+print(os.environ.get("OPENAI_API_KEY"))
