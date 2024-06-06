@@ -1,3 +1,5 @@
+from time import sleep
+
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from langchain_community.chat_message_histories import ChatMessageHistory
@@ -26,6 +28,7 @@ prompt = ChatPromptTemplate.from_messages(
 
 def filter_messages(messages, k=10):
     return messages[-k:]
+
 
 
 chain = (
@@ -57,25 +60,26 @@ messages = [
 ]
 
 with_message_history = RunnableWithMessageHistory(chain, get_session_history, input_messages_key="messages")
-
+with_message_history.invoke()
 config = {"configurable": {"session_id": "abc2"}}
 
-response = with_message_history.invoke(
-    {
-        "messages": messages + [HumanMessage(content="whats my name?")],
-        "language": "English",
-    },
-    config=config,
-)
-
-print(response)
-# todo 流媒体打印
-# config = {"configurable": {"session_id": "abc15"}}
-# for r in with_message_history.stream(
+# response = with_message_history.invoke(
 #     {
-#         "messages": [HumanMessage(content="hi! I'm todd. tell me a joke")],
+#         "messages": messages + [HumanMessage(content="whats my name?")],
 #         "language": "English",
 #     },
 #     config=config,
-# ):
-#     print(r.content, end="|")
+# )
+#
+# print(response.content)
+# todo 流媒体打印
+config = {"configurable": {"session_id": "abc15"}}
+for r in with_message_history.stream(
+    {
+        "messages": [HumanMessage(content="hi! I'm todd. tell me a joke")],
+        "language": "English",
+    },
+    config=config,
+):
+    sleep(1)
+    print(r.content)

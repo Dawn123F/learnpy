@@ -1,6 +1,19 @@
-
 from langchain_openai import ChatOpenAI
-from langchain.schema.messages import (SystemMessage,HumanMessage)
+from langchain.schema.messages import (SystemMessage, HumanMessage)
+from langchain_core.output_parsers import CommaSeparatedListOutputParser
+from langchain_core.output_parsers import PydanticOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+
+prompt = ChatPromptTemplate.from_messages(
+    [
+        (
+            "system", "{instructions}"
+        ),
+        (
+            "user", "帮我生成{color}的5个颜色码"
+        )
+    ]
+)
 
 # 安装lanchain pip install langchain
 # 安装lanchain pip install langchain_openai
@@ -10,8 +23,12 @@ model = ChatOpenAI(
     model_name="gpt-3.5-turbo"
 )
 
-human_message = HumanMessage(content="帮我写一篇关于人类未来的博文")
+parser = CommaSeparatedListOutputParser()
 
-resource = model.invoke([human_message])
+chain = prompt | model | parser
 
-print(resource)
+response = chain.invoke(input={"instructions": parser.get_format_instructions(), "color": "红褐色系"})
+
+print(response)
+#
+# resource = model.invoke([human_message])
