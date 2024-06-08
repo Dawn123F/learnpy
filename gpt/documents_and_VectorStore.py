@@ -1,6 +1,12 @@
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
+from typing import List
+
+from langchain_community.document_loaders import WikipediaLoader, YoutubeLoader
+
+from langchain_core.documents import Document
+from langchain_core.runnables import RunnableLambda
 
 documents = [
     Document(
@@ -32,6 +38,12 @@ vectorstore = Chroma.from_documents(
     ),
 )
 
-for item in vectorstore.similarity_search_with_score("cat"):
-    print(item)
+# retriever = RunnableLambda(vectorstore.similarity_search).bind(k=1)  # select top result
+#
+#
+# for item in retriever.batch(["cat", "shark"]):
+#     print(item)
+
+loder = YoutubeLoader(video_id="中国")
+print(loder.load())
 

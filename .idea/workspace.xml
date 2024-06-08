@@ -5,26 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa57079f-fd09-4b1e-8bb3-fa478d8a178f" name="更改" comment="添加流媒体，会话管理，上下文数据限制，提示模板">
-      <change afterPath="$PROJECT_DIR$/.idea/developer-tools.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/learnpy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/chatrobot/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/chatrobot/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/documents_and_VectorStore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/note1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/video/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/video/utill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/xiaohongshu/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/xiaohongshu/prompt_template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/xiaohongshu/utill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt/xiaohongshu/xiaohongshu_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gpt/dialogue_robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/gpt/dialogue_robot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gpt/learn_langchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/gpt/learn_langchain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/agent/calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/agent/simple_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/01 Document Loader _ 把外部文档加载进来.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/02 Text Splitter _ 上下文窗口有限？文本切成块.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/03 Text Embedding _ 文本变数字？神奇的嵌入向量.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/04 Vector Store _ 给AI模型加海马体.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/05 Retrieval Chain _ 开箱即用的索引增强对话链.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/06 Documents Chain _ 把外部文档塞给模型的不同方式.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/demo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/pdf_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt/documents/论文介绍.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpt/documents_and_VectorStore.py" beforeDir="false" afterPath="$PROJECT_DIR$/gpt/documents_and_VectorStore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpt/note1.md" beforeDir="false" afterPath="$PROJECT_DIR$/gpt/note1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +86,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.calculator.executor": "Run",
     "Python.client.executor": "Run",
     "Python.dialogue_robot.executor": "Run",
     "Python.documents_and_VectorStore.executor": "Run",
@@ -99,11 +94,14 @@
     "Python.index.executor": "Run",
     "Python.learn_langchain.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.pdf_loader.executor": "Run",
     "Python.serve.executor": "Run",
+    "Python.simple_agent.executor": "Run",
     "Python.simple_llm_application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ASUS/PycharmProjects/learnpy/gpt/documents",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,8 +110,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.documents_and_VectorStore">
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\PycharmProjects\learnpy\gpt\documents" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.simple_agent">
+    <configuration name="calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learnpy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,35 +125,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt/agent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpt/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dialogue_robot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="learnpy" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpt/dialogue_robot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpt/agent/calculator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="serve" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pdf_loader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learnpy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,12 +194,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt/documents" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpt/serve.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpt/documents/pdf_loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="simple_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="learnpy" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt/agent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpt/agent/simple_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.simple_agent" />
+        <item itemvalue="Python.calculator" />
         <item itemvalue="Python.documents_and_VectorStore" />
+        <item itemvalue="Python.pdf_loader" />
         <item itemvalue="Python.learn_langchain" />
-        <item itemvalue="Python.dialogue_robot" />
-        <item itemvalue="Python.client" />
-        <item itemvalue="Python.serve" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +267,7 @@
       <workItem from="1717471360869" duration="8048000" />
       <workItem from="1717513630698" duration="4489000" />
       <workItem from="1717599490807" duration="10097000" />
-      <workItem from="1717614925422" duration="7974000" />
+      <workItem from="1717614925422" duration="24464000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -306,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717516042415</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加流媒体，会话管理，上下文数据限制，提示模板">
+      <option name="closed" value="true" />
+      <created>1717649356390</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717649356390</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,14 +354,17 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/learnpy$documents_and_VectorStore.coverage" NAME="documents_and_VectorStore 覆盖结果" MODIFIED="1717641276748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
+    <SUITE FILE_PATH="coverage/learnpy$documents_and_VectorStore.coverage" NAME="documents_and_VectorStore 覆盖结果" MODIFIED="1717749841091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
     <SUITE FILE_PATH="coverage/learnpy$dialogue_robot.coverage" NAME="dialogue_robot 覆盖结果" MODIFIED="1717599497964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
+    <SUITE FILE_PATH="coverage/learnpy$serve.coverage" NAME="serve 覆盖结果" MODIFIED="1717475916891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
     <SUITE FILE_PATH="coverage/learnpy$index__1_.coverage" NAME="index (1) 覆盖结果" MODIFIED="1717433475111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
     <SUITE FILE_PATH="coverage/learnpy$learn_langchain.coverage" NAME="learn_langchain 覆盖结果" MODIFIED="1717612687023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
+    <SUITE FILE_PATH="coverage/learnpy$pdf_loader.coverage" NAME="pdf_loader 覆盖结果" MODIFIED="1717695551125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt/documents" />
     <SUITE FILE_PATH="coverage/learnpy$index.coverage" NAME="index 覆盖结果" MODIFIED="1717475594313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
     <SUITE FILE_PATH="coverage/learnpy$client.coverage" NAME="client 覆盖结果" MODIFIED="1717475924245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
+    <SUITE FILE_PATH="coverage/learnpy$simple_agent.coverage" NAME="simple_agent 覆盖结果" MODIFIED="1717810860561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt/agent" />
     <SUITE FILE_PATH="coverage/learnpy$main.coverage" NAME="main 覆盖结果" MODIFIED="1717256517330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learnpy$simple_llm_application.coverage" NAME="simple_llm_application 覆盖结果" MODIFIED="1717433737111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
-    <SUITE FILE_PATH="coverage/learnpy$serve.coverage" NAME="serve 覆盖结果" MODIFIED="1717475916891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt" />
+    <SUITE FILE_PATH="coverage/learnpy$calculator.coverage" NAME="calculator 覆盖结果" MODIFIED="1717810542054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpt/agent" />
   </component>
 </project>
